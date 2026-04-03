@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../db.php';
+include '../public/db.php';
     $admin_id=$_SESSION['admin_id'] ?? '';
     $admin_name=$_SESSION['admin_name'] ?? ""; 
     if(!isset($admin_id)){header("Location:login.php");}
